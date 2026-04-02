@@ -3,7 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Usub Foundation — Async C++23 Ecosystem</title>
+<title>Usub Foundation — Modern C++23 Async Ecosystem</title>
+<meta name="description" content="Usub Foundation builds open-source C++23 infrastructure: uvent (async I/O), unet (HTTP server), ureflect, ujson, upq and more. Zero dependencies. 610k RPS. MIT licensed.">
+<meta name="keywords" content="C++23, async, coroutines, HTTP server, io_uring, IOCP, open source, C++ library, uvent, unet, ureflect, networking, high performance">
+<meta name="author" content="Usub Foundation">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://usub-foundation.github.io/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://usub-foundation.github.io/">
+<meta property="og:title" content="Usub Foundation — Modern C++23 Async Ecosystem">
+<meta property="og:description" content="Open-source C++23 infrastructure: async I/O engine, HTTP server, compile-time reflection, and more. Zero external dependencies. 610k RPS on 8 threads.">
+<meta property="og:site_name" content="Usub Foundation">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Usub Foundation — Modern C++23 Async Ecosystem">
+<meta name="twitter:description" content="Open-source C++23 infrastructure: async I/O engine, HTTP server, compile-time reflection, and more. Zero external dependencies. 610k RPS on 8 threads.">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Usub Foundation",
+  "url": "https://usub-foundation.github.io/",
+  "description": "Open-source C++23 async ecosystem: uvent I/O engine, unet HTTP server, ureflect compile-time reflection, and more. Zero dependencies, MIT licensed.",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Linux, Windows, macOS, BSD",
+  "programmingLanguage": "C++",
+  "license": "https://opensource.org/licenses/MIT",
+  "codeRepository": "https://github.com/Usub-Foundation",
+  "keywords": "C++23, async, coroutines, HTTP server, io_uring, networking"
+}
+</script>
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 52 52'><rect x='4' y='18' width='9' height='26' fill='%2300E5A0'/><rect x='16' y='10' width='9' height='34' fill='%2300E5A0' opacity='.65'/><rect x='28' y='4' width='9' height='40' fill='%2300E5A0' opacity='.38'/><rect x='40' y='18' width='9' height='26' fill='%2300E5A0'/><rect x='4' y='44' width='45' height='2.5' fill='%2300E5A0'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -587,10 +625,10 @@
     <li><a href="#ecosystem">Ecosystem</a></li>
     <li><a href="#philosophy">Philosophy</a></li>
     <li><a href="#performance">Performance</a></li>
-    <li><a href="#thesis">Thesis</a></li>
+    <li><a href="#thesis">Why usub</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
   </ul>
-  <a href="https://github.com/Usub-Foundation" target="_blank" class="nav-cta">GitHub ↗</a>
+  <a href="https://github.com/Usub-development" target="_blank" class="nav-cta">GitHub ↗</a>
 </nav>
 
 <!-- ══ HERO ══ -->
@@ -621,7 +659,7 @@
 
   <div class="hero-actions">
     <a href="#ecosystem" class="btn-primary">Explore the ecosystem</a>
-    <a href="https://github.com/Usub-Foundation" target="_blank" class="btn-ghost">View on GitHub ↗</a>
+    <a href="https://github.com/Usub-development" target="_blank" class="btn-ghost">View on GitHub ↗</a>
   </div>
 </section>
 
@@ -929,7 +967,7 @@
 <span class="k">co_await</span> <span class="fn">socket.async_read</span>(buffer, max_size);
 <span class="k">co_await</span> <span class="fn">socket.async_write</span>(response.data(), response.size());</pre>
       </div>
-      <p class="bench-note" style="margin-top:1rem">Source: Usub-Foundation/io_performance · HTTP echo · wrk workload</p>
+      <p class="bench-note" style="margin-top:1rem">Source: Usub-development/io_performance · HTTP echo · wrk workload</p>
     </div>
 
     <div>
@@ -980,7 +1018,7 @@
 
 <!-- ══ THESIS ══ -->
 <section id="thesis">
-  <div class="section-label">Investment thesis</div>
+  <div class="section-label">Why usub</div>
   <h2>Why this, why now.</h2>
   <p class="section-sub">C++ isn't going anywhere — it's accelerating. AI inference, financial systems, game engines, embedded. The tooling just hasn't caught up.</p>
 
@@ -1069,9 +1107,9 @@
   <h2>Let's talk about what we're building.</h2>
   <p>Whether you're a company evaluating the stack, a C++ engineer who wants to contribute, or just curious about what we're building — we'd like to hear from you.</p>
   <div class="contact-links">
-    <a href="https://github.com/Usub-Foundation" target="_blank" class="btn-primary">GitHub Organization ↗</a>
-    <a href="https://Usub-Foundation.github.io/uvent/" target="_blank" class="btn-ghost">Documentation ↗</a>
-    <a href="https://github.com/Usub-Foundation/io_perfomance" target="_blank" class="btn-ghost">Benchmarks ↗</a>
+    <a href="https://github.com/Usub-development" target="_blank" class="btn-primary">GitHub Organization ↗</a>
+    <a href="https://usub-development.github.io/uvent/" target="_blank" class="btn-ghost">Documentation ↗</a>
+    <a href="https://github.com/Usub-development/io_perfomance" target="_blank" class="btn-ghost">Benchmarks ↗</a>
   </div>
 </section>
 
@@ -1088,9 +1126,9 @@
     <p>© 2026 Usub Foundation — MIT Licensed</p>
   </a>
   <div class="footer-links">
-    <a href="https://github.com/Usub-Foundation" target="_blank">GitHub</a>
-    <a href="https://Usub-Foundation.github.io/uvent/" target="_blank">Docs</a>
-    <a href="https://github.com/Usub-Foundation/io_perfomance" target="_blank">Benchmarks</a>
+    <a href="https://github.com/Usub-development" target="_blank">GitHub</a>
+    <a href="https://usub-development.github.io/uvent/" target="_blank">Docs</a>
+    <a href="https://github.com/Usub-development/io_perfomance" target="_blank">Benchmarks</a>
     <a href="#top">Back to top ↑</a>
   </div>
 </footer>
