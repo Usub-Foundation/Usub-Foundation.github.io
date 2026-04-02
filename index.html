@@ -925,9 +925,9 @@
       </p>
       <div class="code-block">
         <div class="code-label">echo server</div>
-<span class="c">// the entire hot path, no boilerplate</span>
+        <pre style="margin:0;font:inherit;white-space:pre"><span class="c">// the entire hot path, no boilerplate</span>
 <span class="k">co_await</span> <span class="fn">socket.async_read</span>(buffer, max_size);
-<span class="k">co_await</span> <span class="fn">socket.async_write</span>(response.data(), response.size());
+<span class="k">co_await</span> <span class="fn">socket.async_write</span>(response.data(), response.size());</pre>
       </div>
       <p class="bench-note" style="margin-top:1rem">Source: Usub-Foundation/io_performance · HTTP echo · wrk workload</p>
     </div>
@@ -1067,7 +1067,7 @@
   <div class="contact-glow"></div>
   <div class="section-label">Get involved</div>
   <h2>Let's talk about what we're building.</h2>
-  <p>Whether you're an investor, a company evaluating the stack, or a C++ engineer who wants to contribute — we'd like to hear from you.</p>
+  <p>Whether you're a company evaluating the stack, a C++ engineer who wants to contribute, or just curious about what we're building — we'd like to hear from you.</p>
   <div class="contact-links">
     <a href="https://github.com/Usub-Foundation" target="_blank" class="btn-primary">GitHub Organization ↗</a>
     <a href="https://Usub-Foundation.github.io/uvent/" target="_blank" class="btn-ghost">Documentation ↗</a>
